@@ -18,14 +18,8 @@
     "branch-alias": {
       "dev-master": "2.0.x-dev"
     },
-    "sconfig-plugin": {
-      "console": "src/config/console.php",
-      "admin": [
-        "$web",
-        "$moduleAuth",
-        "$moduleMyAccount",
-        "src/config/admin.php"
-      ]
+    "config-plugin": {
+      "hidev": "src/config/hidev.php"
     }
   }
 }
