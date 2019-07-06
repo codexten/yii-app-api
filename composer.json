@@ -1,0 +1,31 @@
+{
+  "name": "codexten/yii-app-api",
+  "description": "Yii api application",
+  "keywords": [
+    "yii2",
+    "codexten"
+  ],
+  "type": "library",
+  "require": {
+    "codexten/yii-web": "~2.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "codexten\\yii\\api\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0.x-dev"
+    },
+    "sconfig-plugin": {
+      "console": "src/config/console.php",
+      "admin": [
+        "$web",
+        "$moduleAuth",
+        "$moduleMyAccount",
+        "src/config/admin.php"
+      ]
+    }
+  }
+}
